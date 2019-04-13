@@ -34,7 +34,7 @@ class BitcoinECDSA
                     'y' => gmp_init('32670510020758816978083085130507043184471273380659243275938904335757337482424')
                    ];
 
-        $this->networkPrefix = '6b'; //tdcoin network prefix
+        $this->networkPrefix = '41'; //tdcoin network prefix (dec: 65, char T)
     }
 
     /***
@@ -78,7 +78,7 @@ class BitcoinECDSA
     }
 
     /**
-     * Returns the current network prefix for WIF, '80' = main network, 'ef' = test network.
+     * Returns the current network prefix for WIF, '6b' = main network, 'ef' = test network.
      *
      * @return string (hexa)
      */
@@ -86,7 +86,7 @@ class BitcoinECDSA
         if($this->networkPrefix =='6f')
             return 'ef';
         else
-           return '80';
+           return '6b';
     }
 
     /***
