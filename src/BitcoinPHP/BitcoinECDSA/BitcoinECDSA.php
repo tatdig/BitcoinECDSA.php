@@ -34,7 +34,7 @@ class BitcoinECDSA
                     'y' => gmp_init('32670510020758816978083085130507043184471273380659243275938904335757337482424')
                    ];
 
-        $this->networkPrefix = '00';
+        $this->networkPrefix = '6b'; //tdcoin network prefix
     }
 
     /***
